@@ -29,7 +29,7 @@ testWhenAReversalCardIsThrownAfterPlayerFellInWormHoleSquarePlayerIsMovedFourPos
 		winningWhenCompleting: laps
 		withACardDeck: gameDeck.
 	self assert: playerLucho cards size equals: 2.
-	game affect: playerLucho withAnInstantCard: cardToAffectPlayer of: playerLucho.
+	game affect: playerLucho withAPermanentCard: cardToAffectPlayer of: playerLucho.
 	self assert: playerLucho cards size equals: 1.
 	self assert: playerLucho positions last squareNumber equals: 1.
 	game nextTurnFor: playerLucho.
