@@ -1,5 +1,5 @@
 cards tests
-testWhenAPotentiationCardIsThrownAfterPlayerFellInWormHoleSquareEffectIsDoubled
+testWhenAReversalCardIsThrownAfterPlayerFellInWormHoleSquarePlayerIsMovedFourPositionsFoward
 	| playerLuchoHistory squares board diceOneFace collectionOfDices collectionOfPlayers playerLuchoDeck cardToAffectPlayer playerLucho laps gameDeck game |
 	playerLuchoHistory := OrderedCollection new.
 	playerLuchoHistory add: (PlayerPosition at: 1 withLaps: 0 withNumberOfSquaresTravelled:0).
@@ -11,7 +11,7 @@ testWhenAPotentiationCardIsThrownAfterPlayerFellInWormHoleSquareEffectIsDoubled
 	collectionOfDices add: diceOneFace.
 	collectionOfPlayers := OrderedCollection new.
 	playerLuchoDeck := OrderedCollection new.
-	cardToAffectPlayer := CardPotentiation named: 'CardPotentiation1'.
+	cardToAffectPlayer := ReversalCard  named: 'ReversalCard 1'.
 	playerLuchoDeck
 		add: cardToAffectPlayer;
 		add: (CardOverloading named: 'CardOverloading1').
@@ -33,4 +33,4 @@ testWhenAPotentiationCardIsThrownAfterPlayerFellInWormHoleSquareEffectIsDoubled
 	self assert: playerLucho cards size equals: 1.
 	self assert: playerLucho positions last squareNumber equals: 1.
 	game nextTurnFor: playerLucho.
-	self assert: playerLucho positions last squareNumber equals: 2
+	self assert: playerLucho positions last squareNumber equals: 14
