@@ -37,6 +37,7 @@
 		"testWhenPlayerFallsInWormHoleEffectSquareThenPlayerMovesFourPositionsBackwards" : "juanMaDiMartino 12/2/2017 16:46",
 		"testWhenAPlayerIsNotFoundInAGame" : "juanMaDiMartino 12/2/2017 14:45",
 		"testWhenAPotentiationCardIsThrownAfterPlayerFellInSquareWithOutEffectAnyEffectIsApplied" : "juanMaDiMartino 12/2/2017 13:32",
+		"testWhenAReveralCardIsThrownAfterPlayerFellInTimeMachineSquareReversalEffectIsNotApplied" : "jmDM 2/13/2018 12:06",
 		"testWhenAPotentiationCardIsThrownAfterPlayerFellInWormHoleSquareEffectIsDoubled" : "jmDM 2/12/2018 09:14",
 		"testWhenThrowingADampingCardMustAffectAllPlayers" : "juanMaDiMartino 12/2/2017 13:20",
 		"testWhenPlayerAffectsWithACardAnotherPlayerNotOnHisTurnAnErrorMessageIsThrown" : "juanMaDiMartino 12/2/2017 13:29",
